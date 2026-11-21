@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VINOTH NAMASIVAYAM - Personal Portfolio. Developer, Designer & Creator showcasing modern web applications and technical expertise.">
+  <meta name="keywords" content="Portfolio, Software Developer, Web Developer, Frontend, Backend, VINOTH NAMASIVAYAM">
+  <meta name="author" content="VINOTH NAMASIVAYAM">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="VINOTH NAMASIVAYAM | Personal Portfolio">
+  <meta property="og:description" content="Explore my latest projects, technical skills, and background.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://[YOUR_GITHUB_USERNAME].github.io/[REPOSITORY_NAME]/">
+  <meta property="og:image" content="assets/og-preview.png">
+
+  <title>VINOTH NAMASIVAYAM — Developer & Technical Writer</title>
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Relative CSS stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header" class="header-navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-accent">&lt;</span>VINOTH NAMASIVAYAM<span class="logo-accent"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Menu Switch) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon theme-toggle-btn" aria-label="Toggle light/dark theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon icon-dark"></i>
+          <i class="fa-solid fa-sun icon-light"></i>
+        </button>
+        
+        <button id="mobile-toggle" class="btn-icon mobile-toggle-btn" aria-label="Open Mobile Menu" aria-controls="nav-menu" aria-expanded="false">
+          <i class="fa-solid fa-bars icon-bars"></i>
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal-left">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">VINOTH NAMASIVAYAM</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="highlight">Technical Documentation Engineer</span>
+          </p>
+
+          <p class="hero-bio">
+            Technical Illustrator cum Author with 9 years of experience in the automotive field, creating spare parts catalogs, engineering change management, parts queries, illustration & service manuals. Proficient at evaluating end-user needs, preparing project scope, time & design, and implementing proposed solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <span>View My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1E1CoQb8sVPAUAABBeOvBQuYwCKiYQtWw/view?usp=drive_link" class="btn btn-outline" target="_blank" rel="noopener noreferrer" download>
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Headshot / Graphic Placeholder -->
+        <div class="hero-visual reveal-right">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <!-- ADD_IMAGE_HERE: Replace svg below with your headshot img element:
+                   <img src="./assets/headshot.jpg" alt="VINOTH NAMASIVAYAM" class="headshot-img" />
+              -->
+              <div class="avatar-placeholder">
+                <i class="fa-solid fa-user-astronaut placeholder-icon"></i>
+                <p class="placeholder-tag">&lt; <!-- ADD_YOUR_HEADSHOT_HERE --> &gt;</p>
+              </div>
+            </div>
+            <!-- Floating Floating Tech Badges -->
+            <div class="floating-badge badge-1">
+              <i class="fa-brands fa-react"></i> Adobe Illustrator
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-brands fa-node-js"></i> Solidworks Composer
+            </div>
+            <div class="floating-badge badge-3">
+              <i class="fa-solid fa-bolt"></i> CorelDraw
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <h2 class="section-title"><span class="number-tag">01.</span> About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-text-container glass-card reveal-left">
+            <h3 class="about-subtitle">Developing Interactive Document with clarity and precision</h3>
+            <p class="about-paragraph">
+              Hello! I am a passionate catalog developer with a deep interest in modern technologies, technical documentation, and user-centered design. I specialize in building robust, performant documentation that bridge complex backend logic with beautiful, responsive interfaces.
+            </p>
+            <p class="about-paragraph">
+              My journey in mechanical engineering began with a curiosity for how systems operate under the hood. Today, I combine technical expertise with strong writing skills to produce manuals and documentation that empower teams and users alike.
+            </p>
+
+            <div class="focus-areas">
+              <h4 class="focus-title">Core Competencies:</h4>
+              <ul class="focus-list">
+                <li><i class="fa-solid fa-check-double text-accent"></i> Interactive Parts Catalog Creation</li>
+                <li><i class="fa-solid fa-check-double text-accent"></i> Interactive Schematic with Wire Tracing</li>
+                <li><i class="fa-solid fa-check-double text-accent"></i> Technical Writing & Documentation</li>
+                <li><i class="fa-solid fa-check-double text-accent"></i> Animation based Work Instructions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-side-container reveal-right">
+            
+            <!-- Stat Counter Cards -->
+            <div class="stats-grid">
+              <div class="stat-card glass-card">
+                <span class="stat-number" data-target="[INSERT_YEARS: 9]">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number" data-target="[INSERT_PROJECTS_COUNT: 10]">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number" data-target="[INSERT_ARTICLES_COUNT: 4]">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Lineup</span>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                <span class="stat-label">Accuracy Level</span>
+              </div>
+            </div>
+
+            <!-- Soft Skills & Education -->
+            <div class="info-box glass-card">
+              <h4 class="info-box-title"><i class="fa-solid fa-graduation-cap"></i> Education & Certification</h4>
+              <p class="info-text"><strong>B.E. in Mechanical Engineering</strong></p>
+              <p class="info-subtext">Anna University in the period of 2012 - 2016</p>
+              
+              <div class="soft-skills-wrapper">
+                <h4 class="info-box-title"><i class="fa-solid fa-brain"></i> Soft Skills</h4>
+                <div class="skill-chips">
+                  <span class="chip">Solidworks Composer</span>
+                  <span class="chip">Adobe Illustrator</span>
+                  <span class="chip">CorelDraw</span>
+                  <span class="chip">Madcap Flare</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS GRID SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <h2 class="section-title"><span class="number-tag">02.</span> Technical Skills</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-description reveal-up">
+          A categorized overview of the technologies, languages, and frameworks I use to build scalable products.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="skills-category-tabs reveal-up">
+          <button class="tab-btn active" data-category="all">All Skills</button>
+          <button class="tab-btn" data-category="frontend">Documentation</button>
+          <button class="tab-btn" data-category="backend">Illustration</button>
+          <button class="tab-btn" data-category="tools">Authoring</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid reveal-up">
+          
+          <!-- Documentation -->
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-html5"></i></div>
+            <h4 class="skill-name">Adobe Acrobat PRO</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-css3-alt"></i></div>
+            <h4 class="skill-name">Adobe frame maker</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-css3-alt"></i></div>
+            <h4 class="skill-name">Adobe Indesign</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <!-- Illustration -->
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-python"></i></div>
+            <h4 class="skill-name">Adobe lllustrator</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fa-solid fa-database"></i></div>
+            <h4 class="skill-name">CorelDraw</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fa-solid fa-network-wired"></i></div>
+            <h4 class="skill-name">IsoDraw</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <!-- Authoring -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-git-alt"></i></div>
+            <h4 class="skill-name">Solidworks Composer</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fa-brands fa-docker"></i></div>
+            <h4 class="skill-name">Madcap Flare</h4>
+            <span class="skill-tag">applications</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <h2 class="section-title"><span class="number-tag">03.</span> Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <p class="section-description reveal-up">
+          Explore a selection of recent Parts manual,Schematics, Animation, and technical documentation projects.
+        </p>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT CARD 1 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image-container">
+              <!-- ADD_IMAGE_HERE: Replace placeholder div with an image element:
+                   <img src="./assets/project-1.jpg" alt="[PROJECT_1_NAME]" class="project-img" />
+              -->
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">[CATEGORY: Online web manual]</span>
+              <h3 class="project-title">Interactive Parts Catalog</h3>
+              <p class="project-description">
+                Project Information: Completed.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Svg</span>
+                <span class="tech-tag">Hover</span>
+                <span class="tech-tag">Exploded view</span>
+                <span class="tech-tag">Bill of material</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://drive.google.com/drive/folders/1oZ5zyht2q_HsVjJ-l8Sydw-fTqYKedBt?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 2 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image-container">
+              <!-- ADD_IMAGE_HERE: Replace placeholder div with an image element -->
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">[CATEGORY: PDF]</span>
+              <h3 class="project-title">Static Manuals</h3>
+              <p class="project-description">
+                Project Information: Completed.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Exploded view</span>
+                <span class="tech-tag">Adobe Illustrator</span>
+                <span class="tech-tag">PDF</span>
+                <span class="tech-tag">Adobe Acrobat</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://drive.google.com/file/d/1RzhhbwEO0sO20IQNez4u801CJCXzodkO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 3 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image-container">
+              <!-- ADD_IMAGE_HERE: Replace placeholder div with an image element -->
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">[CATEGORY: Schematics]</span>
+              <h3 class="project-title">Interactive Wire Schematics</h3>
+              <p class="project-description">
+                Project Information: Work In Progress.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">MS Viso</span>
+                <span class="tech-tag">Java Script</span>
+                <span class="tech-tag">Adobe Acrobat</span>
+                <span class="tech-tag">Layer</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://[YOUR_LIVE_DEMO_URL_3]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- PROJECT CARD 4 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image-container">
+              <!-- ADD_IMAGE_HERE: Replace placeholder div with an image element -->
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">[CATEGORY: Video]</span>
+              <h3 class="project-title">Animation</h3>
+              <p class="project-description">
+                Project Information: Completed.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">CAD model</span>
+                <span class="tech-tag">Solidworks Composer</span>
+                <span class="tech-tag">Exploded objects</span>
+                <span class="tech-tag">Rendering</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://drive.google.com/file/d/1kpUivgYgQ1wVQAjXLclRPi8vktOzwWBc/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 5 -->
+          <article class="project-card glass-card reveal-up">
+            <div class="project-image-container">
+              <!-- ADD_IMAGE_HERE: Replace placeholder div with an image element -->
+              <div class="project-img-placeholder">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">[CATEGORY: Manual]</span>
+              <h3 class="project-title">3D PDF & Work Instrcutions</h3>
+              <p class="project-description">
+                Project Information: Completed.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">3D CAD Model</span>
+                <span class="tech-tag">Shop floor manual</span>
+                <span class="tech-tag">Adobe Acrobat</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://drive.google.com/drive/folders/1rjJPtQJg9zYNDRBbhqav8VoE5wxpFQ9s?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal-up">
+          <h2 class="section-title"><span class="number-tag">04.</span> Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details / Info Column -->
+          <div class="contact-info reveal-left">
+            <h3 class="contact-subtitle">Let's talk about your next project</h3>
+            <p class="contact-text">
+              Whether you have a question, want to collaborate on a parts catalog, work instructions, service manual, animation, or need technical writing services, my inbox is always open. Fill out the form or reach out directly via email.
+            </p>
+
+            <div class="info-cards">
+              <div class="info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 class="info-label">Direct Email</h4>
+                  <a href="mailto:vinothmechengg5@gmail.com" class="info-value">vinothmechengg5@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 class="info-label">Location</h4>
+                  <span class="info-value">Remote</span>
+                </div>
+              </div>
+
+              <div class="info-card glass-card">
+                <div class="info-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div>
+                  <h4 class="info-label">Availability</h4>
+                  <span class="info-value">Full-time & Contract</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-wrapper glass-card reveal-right">
+            
+            <!-- 
+              FORM BACKEND INTEGRATION INSTRUCTIONS:
+              - FOR FORMSPREE: Replace action below with action="https://formspree.io/f/{YOUR_FORM_ID}" and method="POST"
+              - FOR EMAILJS: Keep action empty and configure EmailJS init credentials inside script.js ContactFormModule.
+            -->
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="ex: Vinoth Namasivayam" required>
+                </div>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="ex: vinoth@example.com" required>
+                </div>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="ex: Project Inquiry / Collaboration">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Please write your message</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-glow btn-block">
+                <span id="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane" id="btn-icon"></i>
+              </button>
+
+              <!-- Form Feedback Toast Message -->
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-accent">&lt;</span>VINOTH NAMASIVAYAM<span class="logo-accent"> /&gt;</span>
+        </a>
+        <p class="footer-tagline">Streamlining your technical data with modern architecture.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> VINOTH NAMASIVAYAM. All rights reserved. Designed & Built for GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Relative JS script execution -->
+  <script src="./script.js"></script>
+</body>
+</html>
